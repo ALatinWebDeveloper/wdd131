@@ -6,9 +6,9 @@ var year = today.getFullYear();
 copyYear.innerHTML = `©${year} Juan Betancourt Bolivar, Venezuela.`
 var modifiedDate = new Date (document.lastModified);
 
-lastModified.innerHTML = `Medium: <span class="highlight">${new Intl.DateTimeFormat(
+lastModified.innerHTML = `Last modified: ${new Intl.DateTimeFormat(
 	"en-US",
 	{
 		dateStyle: "medium"
 	}
-).format(modifiedDate)}</span>`;
+).format(modifiedDate)}`;
