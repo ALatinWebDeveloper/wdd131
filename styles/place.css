@@ -8,6 +8,8 @@
 :root
 {
     --yellow: rgb(255, 255, 46);
+    --blue: rgb(38, 14, 255);
+    --red: rgb(255, 21, 21);
 }
 
 html
@@ -26,7 +28,7 @@ h1
 
 picture img
 {
-    border-top: blue solid 1rem;
+    border-top: var(--blue) solid 1rem;
     width: 100%;
 }
 
@@ -58,9 +60,9 @@ footer
 {
     font-size: 1.1rem;
     text-align: center;
-    background-color: red;
+    background-color: var(--red);
     color: white;
     padding: 2rem 0;
-    border-top: 1rem solid blue;
-    border-bottom: 1px solid red;
+    border-top: 1rem solid var(--blue);
+    border-bottom: 1px solid var(--red);
 }
