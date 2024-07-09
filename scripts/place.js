@@ -7,7 +7,7 @@ const temp = 26;
 const condition = "Mostly cloudy";
 const windSpeed = 6;
 
-function calculateWindChill(temp, windSpeed)
+let calculateWindChill = function(temp, windSpeed)
 {
     if (windSpeed < 4.8 && temp > 10)
     {
@@ -19,4 +19,4 @@ function calculateWindChill(temp, windSpeed)
     }
 }
 
-windChillItem.textContent = $`<b>Wind Chill: </b>${calculateWindChill(temp, windSpeed)}`;
+windChillItem.innerHTML = `<b>Wind Chill: </b>${calculateWindChill(temp, windSpeed)}`;
