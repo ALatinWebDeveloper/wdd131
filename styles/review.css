@@ -1,0 +1,39 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', serif;
+}
+
+main
+{
+    width: 100%;
+    margin: 0;
+}
+
+main img
+{
+    width: 100%;
+}
+
+h1
+{
+    margin: 0;
+    padding: 1rem 0;
+    text-align: center;
+    background-color: #FF511C;
+}
+
+/*Footer*/
+footer
+{
+    text-align: center;
+    background-color: #FF511C;
+    color: black;
+    font-weight: bold;
+    padding: 1rem 0;
+}
