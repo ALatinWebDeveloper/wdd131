@@ -72,7 +72,9 @@ textarea
     padding: .75rem;
     width: 100%;
     margin: .5rem auto 0 auto;
-    resize: none;
+    resize: vertical;
+    max-height: 15rem;
+    min-height: 5rem;
     box-sizing: border-box;
     border: #999 solid 1px;
 }
