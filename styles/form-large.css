@@ -1,16 +1,19 @@
-main
+@media screen and (min-width: 500px)
 {
-    width: 50%;
-    margin: 0 auto;
-    font-size: 1.2rem;
-}
+    main
+    {
+        width: 50%;
+        margin: 0 auto;
+        font-size: 1.2rem;
+    }
 
-.rating
-{
-    font-size: 1.2rem;
-}
+    .rating
+    {
+        font-size: 1.2rem;
+    }
 
-.rating input
-{
-    font-size: 2rem;
+    .rating input
+    {
+        font-size: 2rem;
+    }
 }
