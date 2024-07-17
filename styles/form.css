@@ -1,0 +1,119 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', serif;
+}
+
+h1
+{
+    margin: 0;
+    padding: 1rem 0;
+    text-align: center;
+    background-color: #FF511C;
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-evenly;
+    align-items: stretch;
+    margin: 0 1rem 1rem 1rem;
+}
+
+label
+{
+    width: 90%;
+    margin: 1rem auto;
+}
+
+fieldset
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    border: none;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.rating
+{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3%;
+    font-size: .8rem;
+}
+
+.feature
+{
+    flex-direction: column;
+}
+
+.feature label input
+{
+    margin-right: .5rem;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="date"],
+textarea
+{
+    display: block;
+    padding: .75rem;
+    width: 100%;
+    margin: .5rem auto 0 auto;
+    resize: none;
+    box-sizing: border-box;
+    border: #999 solid 1px;
+}
+
+input[type="radio"]
+{
+    margin-top: .3rem;
+}
+
+input[type="submit"] {
+
+    padding: 1rem;
+    width: 50%;
+    margin: 0 23%;
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    background-color: var(--buttonColor);
+    color: white;
+    border-radius: 6px;
+    border: solid 1px black;
+    cursor: pointer;
+    box-shadow: 1px 2px 5px #999;
+    background-color: #FF511C;
+}
+
+select
+{
+    display: block;
+    padding: .75rem;
+    width: 100%;
+    margin: 5px 0 1rem 0;
+    resize: none;
+    box-sizing: border-box;
+    border: #999 solid 1px;
+}
+/*Footer*/
+footer
+{
+    text-align: center;
+    background-color: #FF511C;
+    color: white;
+    padding: 1rem 0;
+}

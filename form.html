@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/form.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <script src="scripts/form.js" defer></script>
+    <title>Form</title>
+</head>
+<body>
+    <main>
+        <h1>Product Review</h1>
+        <form action="review.html" method="get">
+            
+            <label for="product">Select a producto
+                <select name="product" id="product" required>
+                    <option value="" disabled selected>Select a Product...</option>
+                </select>
+            </label>
+
+            <fieldset class="tierSelector">
+                <legend>Overall Rating</legend>
+                <label for="oneStar" class="rating">⭐<input id="oneStar" type="radio" name="rating" required></label>
+                <label for="twoStars" class="rating">⭐⭐<input id="twoStars" type="radio" name="rating" required></label>
+                <label for="threeStars" class="rating">⭐⭐⭐<input id="threeStars" type="radio" name="rating" required></label>
+                <label for="fourStars" class="rating">⭐⭐⭐⭐<input id="fourStars" type="radio" name="rating" required></label>
+                <label for="fiveStars" class="rating">⭐⭐⭐⭐⭐<input id="fiveStars" type="radio" name="rating" required></label>
+            </fieldset>
+
+            <label for="instDate">Date of instalation
+                <input type="date" name="instDate" id="instDate" required>
+            </label>
+
+            <fieldset class="feature">
+                <legend>Which feature did you find useful? (Check all that apply)</legend>
+                <label for="durability"><input type="checkbox" name="durability" id="durability">Durability</label>
+                <label for="performance"><input type="checkbox" name="performance" id="performance">Performance</label>
+                <label for="design"><input type="checkbox" name="design" id="design">Design</label>
+                <label for="ease"><input type="checkbox" name="ease" id="ease">Ease of use</label>
+            </fieldset>
+            
+            <label for="sugestion">Leave us a review
+                <textarea name="sugestion" id="sugestion" placeholder="Leave us a sugestion..."></textarea>
+            </label>
+
+            <label for="name">Your Name (optional)
+                <input type="text" name="name" id="name">
+            </label>
+
+            <input type="submit" name="submit" id="submit" value="Submite">
+        </form>
+    </main>
+    <footer>
+        <p><span id="currentyear">©2024 Juan Betancourt Bolivar, Venezuela.</span></p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
