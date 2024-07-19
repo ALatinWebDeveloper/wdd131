@@ -20,3 +20,7 @@ let calculateWindChill = function(temp, windSpeed)
 }
 
 windChillItem.innerHTML = `<b>Wind Chill: </b>${calculateWindChill(temp, windSpeed)}`;
+
+array.forEach(element => {
+    
+});

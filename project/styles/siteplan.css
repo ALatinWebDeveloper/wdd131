@@ -1,0 +1,41 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    font-family: 'Roboto', serif;
+    background-color: #FDFDF4;
+}
+
+main
+{
+    margin: 0 auto;
+    width: 70%;
+}
+
+header, footer
+{
+    text-align: center;
+    background-color: #1C202F;
+    color: white;
+    padding: 1rem 0;
+}
+
+h2
+{
+    margin: 1rem 0;
+    text-align: center;
+    background-color: #C5B486;
+    width: fit-content;
+}
+
+img
+{
+    margin: 0 auto;
+    width: 80%;
+    display: block;
+}
