@@ -1,0 +1,280 @@
+/*Deleting inecessary paddings and margins*/
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a
+{
+    text-decoration: none;
+    color: white;
+}
+
+/*Setting the font*/
+
+html
+{
+    font-family: 'Roboto', serif, "Courgette", cursive;
+}
+
+/*Color variables*/
+
+:root
+{
+    --menu: #1C202F;
+    --button: #C5B486;
+    --background: #FDFDF4;
+}
+
+.notVisible
+{
+    display: none;
+}
+
+.visible
+{
+    display: flex;
+}
+
+/*Styling the menu*/
+
+nav
+{
+
+    background-color: var(--menu);
+}
+
+nav ul
+{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+nav li
+{
+    padding: 1rem 0;
+    width: 100%;
+    text-align: center;
+}
+
+nav ul a
+{
+    padding: 0 .5rem;
+    cursor: pointer;
+}
+
+nav img
+{
+    width: 4rem;
+}
+
+nav a:hover
+{
+    background-color: white;
+    color: black;
+    border-radius: 1.2rem;
+}
+
+#logo:hover
+{
+    background-color: var(--menu);
+}
+
+.headerMenu
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerMenu img
+{
+    width: 3rem;
+    margin: .5rem 1rem;
+}
+
+nav button
+{
+    border: none;
+    background-color: var(--menu);
+}
+
+/*hero section*/
+
+.hero
+{
+    width: 100%;
+    margin: 1rem auto;
+    position: relative;
+}
+
+picture img
+{
+    width: 100%;
+}
+
+.heroInfo
+{
+    display: none;
+    position: absolute;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    align-items: stretch;
+    grid-gap: .5rem;
+    bottom: 2%;
+    right: 2%;
+}
+
+.heroInfo > img
+{
+    grid-row: 1 / span 2;
+    height: 5rem;
+}
+
+.platforms
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-row: 2;
+    align-items: center;
+    grid-gap: .5rem;
+}
+
+.platforms img
+{
+    height: 1rem;
+}
+
+/*monsters section*/
+
+h3
+{
+    text-align: center;
+}
+
+/*Footer*/
+
+footer
+{
+    display: flex;
+    background-color: var(--menu);
+    color: white;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: .5rem 0;
+}
+
+footer > img
+{
+    width: 50%;
+}
+
+footer img
+{
+    padding: .5rem 0;
+}
+
+#socials
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+#capcom
+{
+    text-align: center;
+}
+
+#disclaimer
+{
+    width: 80%;
+    display: block;
+    padding: .5rem 0;
+    text-align: center;
+}
+
+/*************/
+
+/* Estilos generales */
+* {box-sizing: border-box;}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}

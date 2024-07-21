@@ -7,6 +7,14 @@
     <meta name="author" content="Juan Betancourt">
     <link rel="icon" href="favicon.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/mhriseBase.css">
+    <link rel="stylesheet" href="styles/mhriseLarge.css">
+
+    <script src="scripts/mhr.js" defer></script>
 
     <meta property="og:title" content="Monster Hunter: Rise - CAPCOM">
     <meta property="og:type" content="website">
@@ -15,6 +23,77 @@
     <title>Monster Hunter: World</title>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <div class="headerMenu">
+                <a href="#" id="logo"><img src="images/mhrLogo.png" alt="Monster Hunter: Rise main logo"></a>
+                <button id="menuBtn"><img src="images/menuBtn.png" alt="Menu burguer button"></button>
+            </div>
+            <ul id="menu" class="notVisible">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Monsters</a></li>
+                <li><a href="#">Locations</a></li>
+                <li><a href="#">Buy it NOW</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero.webp" media="(min-width: 48.1em)">
+                <source srcset="images/hero.webp" media="(max-width: 48em)">
+                <img src="images/hero.webp" alt="Main image for the hero section">
+            </picture>
+            <div class="heroInfo">
+                <img class="rating" src="images/rating.png" alt="">
+                <div class="platforms">
+                    <img src="images/appleIcon.png" alt="">
+                    <img src="images/googlePlayIcon.png" alt="">
+                    <img src="images/ps5Icon.png" alt="">
+                    <img src="images/xboxIcon.webp" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="images/mitzutsune.webp" style="width:100%">
+                <div class="text slide1">Caption Text 1</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="images/magnamalo1.webp" style="width:100%">
+                <div class="text slide2">Magnamalo</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="images/pukeipukei.png" style="width:100%">
+                <div class="text slide3">Pukei-Pukei</div>
+            </div>
+            <!-- Botones de navegación -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <div class="media">
+            <h3>Media</h3>
+            <iframe load="lazy" width="100%" height="315" src="https://www.youtube.com/embed/TdCec2GRg-w?si=4MiNCFPqbbl-jzUy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+    </main>
+    <footer>
+        <img src="images/Logo_Monster_Hunter_Rise.png" alt="Footer Munster Hunter: Rise logo">
+        <div id="capcom">
+            <a href="#"><img src="images/Capcom_logo.png" alt="Footer Capcom logo"></a>
+            <p>©Capcom Co., Ltd</p>
+        </div>
+        <div id="socials">
+            <a href="#"><img src="images/telegramIcon.png" alt="Telegram icon"></a>
+            <a href="#"><img src="images/youtubeIcon.png" alt="Youtube icon"></a>
+            <a href="#"><img src="images/InstagramIcon.png" alt="Instagram icon"></a>
+            <a href="#"><img src="images/tiktokIcon.png" alt="Tiktok icon"></a>
+            <a href="#"><img src="images/XIcon.png" alt="X icon"></a>
+        </div>
+
+        <p id="disclaimer">This is a fanmade website for Monster Hunter. All content, including images, characters, and trademarks, are the property of Capcom Co., Ltd. This site is not affiliated with or endorsed by Capcom. The content on this site is for entertainment and informational purposes only. No copyright infringement is intended. If you are the owner of any content and wish for it to be removed, please contact us.</p>
+    </footer>
 </body>
 </html>
