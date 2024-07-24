@@ -1,22 +1,88 @@
 @media only screen and (min-width: 48.1em) {
 
+    nav
+    {
+        display: flex;
+        padding: 0 1rem;
+        align-items: center;
+    }
+
+    nav a
+    {
+        width: -webkit-fill-available;
+        display: inline-block;
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+
+    nav a:hover
+    {
+        
+        background-color: white;
+        color: black;
+        text-decoration: underline;
+    }
+
+    .headerMenu
+    {
+        width: fit-content;
+        display: inline-block;
+        padding: 0;
+    }
+
+    .headerMenu a
+    {
+        padding: .5rem .5rem 0 .5rem;
+    }
+
+    #menuBtn
+    {
+        display: none;
+    }
+    #menu
+    {
+        display: inline-flex;
+        flex-direction: row;
+        width: 100%;
+        height: fit-content;
+    }
+
+    /*Slideshow*/
+
     .slideshow-container
     {
         height: 100vh;
+        width: 60%;
         margin: 0 auto 1rem auto;
     }
 
     .slideshow-container img
     {
-        padding: 2rem 0;
         height: auto;
         max-height: 100%;
         width: auto;
-        max-width: 75%;
     }
 
     .prev, .next {
         font-size: 5rem;
-        padding: 0 3.5rem;
+        padding: 0 2rem;
+    }
+
+    /*Footer*/
+
+    footer
+    {
+        flex-direction: row;
+        margin-top: 5rem;
+    }
+
+    footer > img
+    {
+        width: 20%;
+    }
+
+    #socials img
+    {
+        margin: 0 .5rem;
     }
 }

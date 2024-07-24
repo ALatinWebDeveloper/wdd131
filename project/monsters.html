@@ -13,10 +13,9 @@
 
     <link rel="stylesheet" href="styles/monstersBase.css">
     <link rel="stylesheet" href="styles/monstersLarge.css">
-    <link rel="stylesheet" href="styles/mhriseBase.css">
-    <link rel="stylesheet" href="styles/mhriseLarge.css">
 
     <script src="scripts/mhr.js" defer></script>
+    <script src="scripts/monsters.js" defer></script>
 
     <meta property="og:title" content="Monster Hunter: Rise - CAPCOM">
     <meta property="og:type" content="website">
@@ -28,14 +27,14 @@
     <header>
         <nav>
             <div class="headerMenu">
-                <a href="#" id="logo"><img src="images/mhrLogo.png" alt="Monster Hunter: Rise main logo"></a>
+                <a href="index.html" id="logo"><img src="images/mhrLogo.png" alt="Monster Hunter: Rise main logo"></a>
                 <button id="menuBtn"><img src="images/menuBtn.png" alt="Menu burguer button"></button>
             </div>
             <ul id="menu" class="notVisible">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="monsters.html">Monsters</a></li>
                 <li><a href="#">Locations</a></li>
-                <li><a href="#">Buy it NOW</a></li>
+                <li><a href="https://store.steampowered.com/app/1446780/MONSTER_HUNTER_RISE/">Buy it NOW</a></li>
             </ul>
         </nav>
     </header>
@@ -45,11 +44,15 @@
             <div class="prevContainer">
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             </div>
-                <img class="notVisible slide" src="images/magnamalo.webp" alt="" loading="lazy">
+            <img class="notVisible slide" src="images/MagnamaloRei.webp" alt="">
             
-                <img class="notVisible slide" src="images/mitzutsune.webp" alt="" loading="lazy">
+            <img class="notVisible slide" src="images/MitzutsuneRei.webp" alt="" loading="lazy">
             
-                <img class="notVisible slide" src="images/Anjanath.webp" alt="" loading="lazy">
+            <img class="notVisible slide" src="images/ZinogreRei.webp" alt="" loading="lazy">
+
+            <img class="notVisible slide" src="images/tigrexRei.webp" alt="" loading="lazy">
+
+            <img class="notVisible slide" src="images/DiablosRei.webp" alt="" loading="lazy">
             
             <!-- Botones de navegación -->
             
@@ -62,8 +65,13 @@
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
         </div>
-        <section id="description"></section>
+        <section id="description">
+            <h3 class="monsterName"></h3>
+            <p class="monsterDesc"></p>
+        </section>
         
         
     </main>

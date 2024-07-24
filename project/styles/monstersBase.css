@@ -1,21 +1,149 @@
+/*Deleting inecessary paddings and margins*/
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a
+{
+    text-decoration: none;
+    color: white;
+}
+
+/*Setting the font*/
+
+html
+{
+    font-family: 'Roboto', serif, "Courgette", cursive;
+}
+
+/*Color variables*/
+
+:root
+{
+    --menu: #1C202F;
+    --button: #C5B486;
+    --background: #7608f3;
+}
+
+.notVisible
+{
+    display: none;
+}
+
+.visible
+{
+    display: flex;
+}
+
+/*Styling the menu*/
+
+p{
+    font-size: 1.1rem;
+}
+
+body
+{
+    background-image: url("../images/shrineRunes.webp");
+    background-position: top;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #cccccc;
+    color: white;
+}
+
+#mainLogo
+{
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+}
+
+#menuBtn img
+{
+    width: 3rem;
+}
+
+nav
+{
+    background-color: var(--menu);
+}
+
+nav ul
+{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+}
+
+nav li
+{
+    width: 100%;
+    text-align: center;
+}
+
+nav a
+{
+    padding: 1rem;
+    cursor: pointer;
+    display: block;width: -webkit-fill-available;
+}
+
+#logo
+{
+    padding: 0.5rem;
+}
+
+#logo:hover
+{
+    background-color: var(--menu);
+}
+
+.headerMenu
+{
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+    padding-bottom: 0;    
+}
+
+.headerMenu img
+{
+    width: 4rem;
+}
+
+nav button
+{
+    border: none;
+    background-color: var(--menu);
+}
+
+/*Slideshow*/
+
 .slideshow-container {
     display: flex;
     width: 100%;
     position: relative;
     margin: 0 auto 10% auto;
     height: 50vh;
-    background-image: url("../images/scroll.webp");
-    background-size: cover;
 }
 
 .slideshow-container img {
     vertical-align: middle;
-    width: 75%;
+    width: 100%;
+    height: 100%;
     margin: auto auto;
 }
 
 .prevContainer, .nextContainer
 {
+    position: absolute;
     color: white;
     font-weight: bold;
     width: auto;
@@ -24,11 +152,11 @@
 }
 
 .prev, .next {
-    padding: 0;
+    padding: 0 1rem;
     transition: 0.6s ease;
     border-radius: 0 3px 0 3px;
     user-select: none;
-    font-size: 5rem;
+    font-size: 3rem;
     height: 100%;
     display: flex;
     align-items: center;
@@ -78,7 +206,57 @@
     animation-duration: 1.5s;
 }
 
+h1,h2,h3, p
+{
+    text-align: center;
+    padding: 1rem 0;
+}
+
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
+}
+
+/*Footer*/
+
+footer
+{
+    display: flex;
+    background-color: var(--menu);
+    color: white;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: .5rem 0;
+    margin-top: 3rem;
+}
+
+footer > img
+{
+    width: 50%;
+}
+
+footer img
+{
+    padding: .5rem 0;
+}
+
+#socials
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+#capcom
+{
+    text-align: center;
+}
+
+#disclaimer
+{
+    width: 80%;
+    display: block;
+    padding: .5rem 0;
+    text-align: center;
 }
