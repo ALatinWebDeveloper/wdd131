@@ -51,3 +51,6 @@ function showSlides(n) {
     dots[slideIndex-1].classList.add("active");
 }
 
+const monsterData = ;
+const descContainer = document.querySelector("#description");
+

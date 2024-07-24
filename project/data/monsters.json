@@ -1,0 +1,24 @@
+{
+    "monsters": [
+        {
+            "name": "Magnamalo",
+            "img_location": "https://example.com/magnamalo.jpg",
+            "description": "Magnamalo is the flagship monster of Monster Hunter Rise, known for its fearsome appearance and deadly abilities. This fanged wyvern is clad in armor-like carapace, resembling tempered steel, and is surrounded by a sinister vapor."
+        },
+        {
+            "name": "Mizutsune",
+            "img_location": "https://example.com/mizutsune.jpg",
+            "description": "Mizutsune is a specially evolved Leviathan with a sleek, lithe body. It can secrete a peculiar foam that covers its foes in immobilizing bubbles. Once its prey's movement is impaired, it closes in with spry, dance-like movements."
+        },
+        {
+            "name": "Anjanath",
+            "img_location": "https://example.com/anjanath.jpg",
+            "description": "Anjanath is a large bipedal monster that breathes fire and uses its body to crush enemies. It is highly aggressive and will try to use its flames and its large body to destroy both hunters and monsters alike."
+        },
+        {
+            "name": "Goss Harag",
+            "img_location": "https://example.com/goss_harag.jpg",
+            "description": "Goss Harag is a monster native to ice-cold climates. Covered in fur so thick it keeps out the harsh frost, it roams the snowy plains in search of prey. It can inhale the cold air to freeze its own bodily fluids and then spit them out to create icy blades on its arms. When riled up, the Goss Harag turns red and becomes exceedingly dangerous."
+        }
+    ]
+}
