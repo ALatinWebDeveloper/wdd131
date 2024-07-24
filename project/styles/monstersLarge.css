@@ -1,0 +1,22 @@
+@media only screen and (min-width: 48.1em) {
+
+    .slideshow-container
+    {
+        height: 100vh;
+        margin: 0 auto 1rem auto;
+    }
+
+    .slideshow-container img
+    {
+        padding: 2rem 0;
+        height: auto;
+        max-height: 100%;
+        width: auto;
+        max-width: 75%;
+    }
+
+    .prev, .next {
+        font-size: 5rem;
+        padding: 0 3.5rem;
+    }
+}

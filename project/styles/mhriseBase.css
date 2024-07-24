@@ -95,6 +95,11 @@ nav a
     display: block;width: -webkit-fill-available;
 }
 
+#logo
+{
+    padding: 0.5rem;
+}
+
 #logo:hover
 {
     background-color: var(--menu);

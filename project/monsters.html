@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Monster Hunter, the exciting monster hunting game. Explore vast worlds, face epic creatures and upgrade your equipment. Buy now and join the adventure!">
+    <meta name="author" content="Juan Betancourt">
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/monstersBase.css">
+    <link rel="stylesheet" href="styles/monstersLarge.css">
+    <link rel="stylesheet" href="styles/mhriseBase.css">
+    <link rel="stylesheet" href="styles/mhriseLarge.css">
+
+    <script src="scripts/mhr.js" defer></script>
+
+    <meta property="og:title" content="Monster Hunter: Rise - CAPCOM">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2023/01/monster-hunter-rise-2935976.jpg?tf=3840x">
+    <meta property="og:url" content="https://alatinwebdeveloper.github.io/wdd131/">
+    <title>Monster Hunter: World</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="headerMenu">
+                <a href="#" id="logo"><img src="images/mhrLogo.png" alt="Monster Hunter: Rise main logo"></a>
+                <button id="menuBtn"><img src="images/menuBtn.png" alt="Menu burguer button"></button>
+            </div>
+            <ul id="menu" class="notVisible">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="monsters.html">Monsters</a></li>
+                <li><a href="#">Locations</a></li>
+                <li><a href="#">Buy it NOW</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Monsters</h1>
+        <div class="slideshow-container">
+            <div class="prevContainer">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            </div>
+                <img class="notVisible slide" src="images/mitzutsune.webp" alt="">
+            
+                <img class="notVisible slide" src="images/magnamalo.webp" alt="">
+            
+                <img class="notVisible slide" src="images/Anjanath.webp" alt="">
+            
+            <!-- Botones de navegación -->
+            
+            <div class="nextContainer">
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+        <!-- Puntos de navegación -->
+        <div class="dotContainer">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <section>
+            <h2>Description</h2>
+            <p class="description"></p>
+        </section>
+        <br>
+        
+        
+    </main>
+    <footer>
+        <img src="images/Logo_Monster_Hunter_Rise.png" alt="Footer Munster Hunter: Rise logo">
+        <div id="capcom">
+            <a href="#"><img src="images/Capcom_logo.png" alt="Footer Capcom logo"></a>
+            <p>©Capcom Co., Ltd</p>
+        </div>
+        <div id="socials">
+            <a href="#"><img src="images/telegramIcon.png" alt="Telegram icon"></a>
+            <a href="#"><img src="images/youtubeIcon.png" alt="Youtube icon"></a>
+            <a href="#"><img src="images/InstagramIcon.png" alt="Instagram icon"></a>
+            <a href="#"><img src="images/tiktokIcon.png" alt="Tiktok icon"></a>
+            <a href="#"><img src="images/XIcon.png" alt="X icon"></a>
+        </div>
+
+        <p id="disclaimer">This is a fanmade website for Monster Hunter. All content, including images, characters, and trademarks, are the property of Capcom Co., Ltd. This site is not affiliated with or endorsed by Capcom. The content on this site is for entertainment and informational purposes only. No copyright infringement is intended. If you are the owner of any content and wish for it to be removed, please contact us.</p>
+    </footer>
+</body>
+</html>
