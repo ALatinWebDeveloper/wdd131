@@ -51,6 +51,30 @@ function showSlides(n) {
     dots[slideIndex-1].classList.add("active");
 }
 
-const monsterData = ;
+const monsterData = "https://ALatinWebDeveloper.github.io/wdd131/project/data/monsters.json";
 const descContainer = document.querySelector("#description");
 
+async function getMonstersInfo() {
+
+    let response = await fetch(monsterData);
+    let data = await response.json();
+
+    displayMonsterInfo(data.monsters);
+};
+
+/* Creating the elements */
+
+const displayMonsterInfo = (data) =>
+{
+
+    h3 = document.createElement("h3");
+    p = document.createElement("p");
+
+    h3.textContent = data[0].name;
+    p.textContent = data[0].description;
+
+    descContainer.appendChild(h3);
+    descContainer.appendChild(p);
+}
+
+getMonstersInfo();
