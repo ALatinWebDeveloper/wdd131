@@ -13,4 +13,3 @@ function displayMenu()
         (menu.classList.replace("visible", "notVisible"));
     }
 }
-const descContainer = document.querySelector("#description");

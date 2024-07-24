@@ -26,3 +26,41 @@ const hunting_areas = [
     }
 ]
 
+/* Monsters slideshow */
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("slide");
+    let dots = document.getElementsByClassName("dot");
+
+    if (n > slides.length)
+    {
+        slideIndex = 1
+    }
+    if (n < 1) {slideIndex = slides.length}
+
+    for (i = 0; i < slides.length; i++)
+    {
+        slides[i].classList.replace("visible", "notVisible");
+    }
+
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+
+    slides[slideIndex-1].classList.replace("notVisible", "visible");
+    dots[slideIndex-1].classList.add("active");
+    document.querySelector(".monsterName").textContent = hunting_areas[slideIndex-1].name;
+    document.querySelector(".monsterDesc").textContent = hunting_areas[slideIndex-1].description;
+}

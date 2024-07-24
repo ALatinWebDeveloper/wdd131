@@ -19,9 +19,7 @@ const monsters = [
             "name": "Diablos",
             "description": "Diablos is a large, bipedal wyvern with two massive horns. Known as the Tyrant of the Desert, it is highly territorial and will fiercely defend its territory from intruders. Diablos can burrow underground and launch surprise attacks, making it a formidable opponent."
         }
-    ]
-
-
+    ];
 
 /* Monsters slideshow */
 
